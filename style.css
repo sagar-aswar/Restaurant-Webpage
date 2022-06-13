@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,200;1,400;1,500;1,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    color: white;
+    background-color: tomato;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.btn:hover {
+    background-color: black;
+    transform: scale(1.1);
+}
+
+header {
+    background-color: #eafff5;
+    box-shadow: 0 2px 10px white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+}
+
+header img {
+    width: 50px;
+}
+
+header h1 {
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Noto Serif', serif;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 20px 30px;
+}
+
+nav ul li a {
+    color: grey;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+#home {
+    height: 87vh;
+    color: white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::after {
+    content: '';
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: url(restaurant.jpg) center center/cover;
+    opacity: 0.4;
+}
+
+#home h2 {
+    font-size: 55px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 25px;
+}
+
+#home h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#home .btn {
+    width: 15%;
+}
+
+#home .btn:hover {
+    color: black;
+    background-color: lightcyan;
+}
+
+#about {
+    background-color: lightcyan;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left {
+    width: 35%;
+}
+
+.left img {
+    border-radius: 10px;
+}
+
+.right {
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h2 {
+    color: tomato;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.right h3 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0;
+}
+
+.right ul {
+    list-style: none;
+    color: grey;
+    padding: 10px 0;
+}
+
+.right .btn {
+    width: 60%;
+    margin: 20px 0;
+}
+
+.right ul li {
+    font-size: 18px;
+}
+
+#services {
+    /* background-image: url(../Media/restaurant.jpg); */
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: tomato;
+    border-bottom: 1.5px solid tomato;
+    cursor: pointer;
+}
+
+#services .row {
+    display: flex;
+    height: 60vh;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    background-color: lightcyan;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fas {
+    color: tomato;
+    padding: 25px 0;
+    font-size: 65px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.fas:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.card h4 {
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 15px;
+    color: grey;
+}
+
+#menu {
+    height: 100vh;
+    padding: 30px 0;
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#menu h2 {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    border-bottom: 1.5px solid black;
+}
+
+#menu .row {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    background-color: white;
+    padding: 25px;
+    margin: 40px 10px;
+    border-radius: 10px;
+}
+
+.show h4 {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.show img {
+    border-radius: 50%;
+    height: 60%;
+}
+
+.show p {
+    padding: 10px 0;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#Book_Table {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+#Book_Table h2 {
+    font-size: 35px;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+}
+
+.bg-img {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.bg-img img {
+    width: 100%;
+    height: 85vh;
+    opacity: 0.6;
+}
+
+#booking {
+    color: black;
+    background-color: white;
+    z-index: 3;
+    padding: 30px;
+    width: 30%;
+    height: 60vh;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+label {
+    display: block;
+    padding: 20px 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input {
+    background-color: rgb(240, 247, 247);
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 7.5px 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+
+#reserve_btn {
+    width: 70%;
+    margin: auto;
+}
+
+footer {
+    color: white;
+    background-color: rgb(12, 11, 22);
+    height: 30vh;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.fab {
+    font-size: 30px;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.fab:hover {
+    transform: scale(1.25);
+}
+
+.social {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Back_to_Top .fas {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: tomato;
+    position: fixed;
+    right: 2%;
+    bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7.5px;
+}
